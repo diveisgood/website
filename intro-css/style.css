@@ -331,7 +331,7 @@ color: #fff;
 }
 
 h2.section-heading span {
-color: #db0018;
+color: #2f81a4;
 }
 
 h2.section-heading.section-heading-small {
@@ -469,7 +469,7 @@ cursor: pointer;
 font-size: 16px;
 text-align: center;
 color: #fff;
-background: #db0018;
+background: #2f81a4;
         opacity: 0;
    -moz-opacity: 0;
 -webkit-opacity: 0;
@@ -1120,7 +1120,7 @@ width: 50px;
 height: 50px;
 line-height: 50px;
 position: absolute;
-background: #db0018;
+background: #2f81a4;
 -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -1264,7 +1264,7 @@ width: 40px;
 height: 40px;
 top: -10px;
 right: -10px;
-background: #db0018;
+background: #2f81a4;
 -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -1812,7 +1812,7 @@ font-weight: 500;
 text-transform: uppercase;
 text-decoration: none;
 letter-spacing: 0.10em;
-color: #db0018;
+color: #2f81a4;
 background: none;
 padding: 9px 40px 0 40px;
 margin-top: 10px;
@@ -1858,7 +1858,7 @@ width: 15px;
 height: 38px;
 top: -2px;
 left: -6px;
-border: 1px solid #db0018;
+border: 1px solid #2f81a4;
 border-right: none;
 -webkit-transition: all 0.5s linear;
    -moz-transition: all 0.5s linear;
@@ -1893,7 +1893,7 @@ width: 15px;
 height: 38px;
 top: -2px;
 right: -6px;
-border: 1px solid #db0018;
+border: 1px solid #2f81a4;
 border-left: none;
 -webkit-transition: all 0.5s linear;
    -moz-transition: all 0.5s linear;

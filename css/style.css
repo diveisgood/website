@@ -1411,7 +1411,7 @@ background: #000;
 }
 
 .c-btn.inverse::before {
-background: #db0018;
+background: #2f81a4;
 }
 
 .c-btn:hover::before,
