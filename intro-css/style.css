@@ -298,6 +298,22 @@ line-height: 100%;
 z-index: 1;
 }
 
+h3.section-heading {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  color: #000;
+  margin: 0 auto -3px auto;
+  width: 100%;
+  line-height: 100%;
+  z-index: 1;
+  }
+
 @media all and (min-width: 1920px) {
   h2.section-heading {
     font-size: 85px;
@@ -2202,7 +2218,7 @@ z-index: -1;
 }
 
 .inner-divider {
-height: 100px;
+height: 60px;
 }
 
 @media all and (min-width: 1920px) {

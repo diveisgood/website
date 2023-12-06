@@ -273,7 +273,7 @@ font-size: 14px;
 line-height: 1.5;
 font-style: normal;
 font-weight: 400;
-background: #111;
+background: white;
  -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 -webkit-text-size-adjust: 100%;
@@ -338,8 +338,8 @@ strong {
 font-weight: bold;
 }
 
-::-moz-selection { background: #111; color: #fff; }
-     ::selection { background: #111; color: #fff; }
+::-moz-selection { background: #fff; color: #111; }
+     ::selection { background: #fff; color: #111; }
 
 
 /* center container */
@@ -2582,7 +2582,7 @@ background: none;
 #section1,
 #section2,
 #section3 {
-background: #111;
+background: #fff;
 }
 
 
