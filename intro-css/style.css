@@ -1577,6 +1577,20 @@ padding: 19px 15px 0 15px;
   }
 }
 
+@media only screen and (max-width: 608px) {
+  
+  .main-navigation-bg .navbar-toggle {
+    margin-top: -13% !important;
+  }
+}
+
+@media only screen and (max-width: 508px) {
+  
+  .main-navigation-bg .navbar-toggle {
+    margin-top: -15% !important;
+  }
+}
+
 .main-navigation-bg .main-navigation .navbar-nav li a:hover {
 color: #000;
 }
@@ -1593,7 +1607,7 @@ color: #000;
   }
   
   .navbar-toggle {
-    margin-top: -35px;
+    margin-top: -10%;
     margin-right: 4px;
     -webkit-transition: all .4s ease-out;
        -moz-transition: all .4s ease-out;
@@ -1603,7 +1617,7 @@ color: #000;
   }
 	
   .main-navigation-bg .navbar-toggle {
-    margin-top: -44px;
+    margin-top: -10%;
     margin-right: 4px;
     -webkit-transition: all .4s ease-out;
        -moz-transition: all .4s ease-out;
