@@ -9,9 +9,11 @@ import shutil
 import sys
 import re
 
+#Imagen pequeña
+img_url_sm = "https://images.pexels.com/photos/672630/pexels-photo-672630.jpeg?w=1920&h=1280&fit=crop"
 
 try:
-    title = "Dive into Diversity: A Journey Through the Different Types of Diving"
+    title = "Unveiling the Depths: A Journey Back in Time"
     title = title
 except Exception as e:
     print(e)
@@ -25,7 +27,7 @@ except Exception as e:
     print(e)
     raise e
     
-article_file_name = "index-ARTICLE-DiveintoDiversity.html"
+article_file_name = "index-ARTICLE-UnveilingtheDepths.html"
     
 # Nombre del archivo HTML original
 archivo_original = "index.html"
@@ -54,8 +56,7 @@ with open(archivo_original, 'r', encoding='utf-8') as file:
     new_article = patron_article_href.sub(f'<a class="zoom-item" href="{href}" target="_top">Read</a>', new_article)
     
     patron_article_img = re.compile(fr'<img alt="Image Preview" src="(.*?)">', re.DOTALL)
-    url = "https://images.pexels.com/photos/37542/divers-scuba-reef-underwater-37542.jpeg"
-    new_article = patron_article_img.sub(f'<img alt="Image Preview" src="{url}">', new_article)
+    new_article = patron_article_img.sub(f'<img alt="Image Preview" src="{img_url_sm}">', new_article)
     
     patron_article_title = re.compile(fr'<h2 class="article-title">(.*?)</h2>', re.DOTALL)
     new_article = patron_article_title.sub(f'<h2>{title}</h2>', new_article)

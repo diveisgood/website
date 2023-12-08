@@ -9,10 +9,11 @@ import shutil
 import sys
 import re
 
-
+#Imagen grande
+img_url = "https://images.pexels.com/photos/672630/pexels-photo-672630.jpeg?w=4608&h=3456"
 
 try:
-    title = "Dive into Diversity: A Journey Through the Different Types of Diving"
+    title = "Unveiling the Depths: A Journey Back in Time"
     title = title
 except Exception as e:
     print(e)
@@ -102,6 +103,11 @@ num_parrafos = len(article_struct)
 with open(archivo_original, 'r', encoding='utf-8') as file:
     contenido_original = file.read()
     
+    #Modificacion imagen
+    patron_image = re.compile(fr'<div class="section-bg-home section-bg-home-countdown-off" style="background-image:(.*?);"></div><!-- home bg end -->', re.DOTALL)
+    img_url = "url('" + img_url + "')"
+    contenido_original = patron_image.sub(f'<div class="section-bg-home section-bg-home-countdown-off" style="background-image:{img_url};"></div><!-- home bg end -->', contenido_original)
+                              
     #Inclusion titulos
     patron_title_1 = re.compile(fr'<h2 id="title_1" class="home-page-main-title fadeIn-element">(.*?)<\/h2>', re.DOTALL)
     contenido_original = patron_title_1.sub(f'<h2 id="title_1" class="home-page-main-title fadeIn-element">{title_1}</h2>', contenido_original)
